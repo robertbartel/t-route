@@ -166,7 +166,7 @@ class DataAssimilationParameters(BaseModel, extra='forbid'):
     wrf_lastobs_type: str = "obs-based"
     streamflow_da: StreamflowDA
     # NOTE: this appears to be optional. See nwm_routing/input.py ~:439
-    reservoir_da: Optional[ReservoirDA] = None
+    reservoir_da: Optional[ReservoirPersistenceDA] = None
 
     # NOTE: not present in v3_doc.yaml
     # see troute/nhd_network_utilities_v02.py ~:801
